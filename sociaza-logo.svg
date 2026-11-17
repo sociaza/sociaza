@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36" fill="none" role="img" aria-label="Sociaza">
+  <!-- Subtle icon mark -->
+  <g transform="translate(2, 4)">
+    <rect width="28" height="28" rx="7" fill="#F0EFEA"/>
+    <rect x="0.5" y="0.5" width="27" height="27" rx="6.5" stroke="#E2E1DA" stroke-width="1"/>
+    <path d="M17.5 9.5C16.5 8.6 15.2 8.2 13.7 8.2C10.8 8.2 9.2 9.8 9.2 12C9.2 15.4 16 14.3 16 17C16 18.2 14.9 19 13.3 19C11.5 19 10 18.1 8.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="19.2" cy="18.2" r="1.4" fill="#234E38"/>
+  </g>
+  
+  <!-- sociaza wordmark lettering -->
+  <text x="38" y="24.5" font-family="'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.04em" fill="#1F201E">
+    sociaza<tspan fill="#234E38">.</tspan>
+  </text>
+</svg>
