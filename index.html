@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociaza — Calm, Organized Social Publishing</title>
+  <meta name="description" content="A more organized way to prepare, manage, and publish content across your social channels. An elegant, privacy-first locally hosted web publishing workflow currently in development.">
+  <meta name="author" content="Sociaza">
+  <link rel="canonical" href="https://sociaza.online/">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sociaza.online/">
+  <meta property="og:title" content="Sociaza — Calm, Organized Social Publishing">
+  <meta property="og:description" content="A more organized way to prepare, manage, and publish content across your social channels.">
+  <meta property="og:site_name" content="Sociaza">
+  <meta property="og:image" content="https://sociaza.online/assets/images/sociaza-mark.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sociaza — Calm, Organized Social Publishing">
+  <meta name="twitter:description" content="A more organized way to prepare, manage, and publish content across your social channels.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Typography: Manrope with system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body id="top">
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand Logo & Wordmark -->
+      <a href="#top" class="brand" aria-label="Sociaza home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
+            <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="18.5" r="1.5" fill="#234E38"/>
+          </svg>
+        </span>
+        <span class="brand-name">sociaza<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="privacy/" class="nav-link">Privacy</a></li>
+        </ul>
+        <div class="nav-badge-wrap">
+          <span class="badge-status" title="Sociaza is currently in private development">
+            <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+            In Development
+          </span>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu" aria-controls="mobile-nav-drawer">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="#product" class="mobile-nav-link">Product</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="privacy/" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="mailto:contact@sociaza.online" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="badge-status">
+        <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+        Currently in Private Development
+      </span>
+      <p style="font-size: 0.8125rem; color: var(--text-tertiary);">sociaza.online · All rights reserved</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section-hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-badge">Early Preview</span>
+            <span>·</span>
+            <span>Single-user locally hosted architecture</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Your content. Your platforms. One simpler workflow.
+          </h1>
+
+          <p class="hero-subtitle">
+            A more organized way to prepare, manage, and publish content across your social channels.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#product" class="btn btn-primary">
+              Discover Sociaza
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3.5V12.5M8 12.5L3.5 8M8 12.5L12.5 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">Read the Vision</a>
+          </div>
+        </div>
+
+        <!-- Product Interface Preview (Authentic CSS/SVG UI Window) -->
+        <div class="product-mockup-wrapper" aria-label="Illustrative preview of the Sociaza browser-based local application interface">
+          <div class="mockup-window-header">
+            <div class="window-dots" aria-hidden="true">
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+            </div>
+            <div class="window-title">
+              <span>localhost:3000</span>
+              <span style="color: var(--border-medium);">/</span>
+              <span>Sociaza</span>
+              <span class="window-status-pill">Illustrative Concept</span>
+            </div>
+            <div class="window-actions">
+              <span style="font-size: 0.75rem; color: var(--text-tertiary); font-family: var(--font-mono);">Local App</span>
+            </div>
+          </div>
+
+          <div class="mockup-body">
+            <!-- Left: Workspace Navigation -->
+            <div class="mockup-sidebar">
+              <div class="mockup-section-label">Local Workspace</div>
+              <div class="mockup-nav-item is-selected">
+                <span>Active Queue</span>
+                <span class="mockup-count-pill">6</span>
+              </div>
+              <div class="mockup-nav-item">
+                <span>Asset Library</span>
+                <span class="mockup-count-pill">48</span>
+              </div>
+              <div class="mockup-nav-item">
+                <span>Publishing Calendar</span>
+              </div>
+
+              <div class="mockup-section-label" style="margin-top: 1.5rem;">Synced Catalogs</div>
+              <div class="mockup-channel-card">
+                <div class="channel-card-head">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#234E38" stroke-width="1.5"/>
+                    <path d="M5.5 8H10.5" stroke="#234E38" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Etsy Shop Catalog</span>
+                </div>
+                <div class="channel-card-sub">Read-only API v3 · 24 Items</div>
+              </div>
+
+              <div class="mockup-channel-card" style="margin-top: 0.65rem;">
+                <div class="channel-card-head" style="color: var(--text-secondary);">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#8A8C87" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  </svg>
+                  <span>Pinterest Target</span>
+                </div>
+                <div class="channel-card-sub">API v5 Integration in Dev</div>
+              </div>
+            </div>
+
+            <!-- Center: Publishing Composer -->
+            <div class="mockup-main">
+              <div class="composer-card">
+                <div class="composer-header">
+                  <div class="composer-source">
+                    <span class="source-tag">Etsy Item #84920</span>
+                    <span style="color: var(--text-tertiary);">→</span>
+                    <span style="font-weight: 600; font-size: 0.8125rem;">Pinterest Draft</span>
+                  </div>
+                  <span class="tag-chip" style="background-color: var(--accent-light); color: var(--accent);">Board: Handcrafted Home</span>
+                </div>
+
+                <div class="composer-preview-grid">
+                  <div class="composer-asset-box">
+                    <svg class="asset-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <circle cx="8.5" cy="8.5" r="1.5"/>
+                      <path d="M21 15L16 10L5 21"/>
+                    </svg>
+                    <span class="asset-badge-local">SQLite Cache · 2000px</span>
+                  </div>
+
+                  <div class="composer-fields">
+                    <div class="composer-title-field">
+                      Minimalist Walnut Floating Shelf with Brass Inlay
+                    </div>
+                    <div class="composer-desc-field">
+                      Handcrafted solid walnut shelf designed for clean modern interiors. Precision joinery with brushed brass accent strip.
+                    </div>
+                    <div class="composer-tags-row">
+                      <span class="tag-chip">#woodworking</span>
+                      <span class="tag-chip">#minimalistdecor</span>
+                      <span class="tag-chip">#modernshelf</span>
+                      <span class="tag-chip">+4 more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Preview -->
+              <div class="timeline-strip">
+                <div class="timeline-label">
+                  <span>Publishing Cadence Preview</span>
+                  <span style="color: var(--text-tertiary); font-weight: 400;">Local Queue</span>
+                </div>
+                <div class="timeline-slots">
+                  <div class="timeline-slot is-active">
+                    <div class="slot-time">Today · 14:00</div>
+                    <div class="slot-title">Walnut Shelf Pin</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Tomorrow · 10:30</div>
+                    <div class="slot-title">Ceramic Mug Series</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Thu · 16:15</div>
+                    <div class="slot-title">Linen Throw Drop</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Fri · 11:00</div>
+                    <div class="slot-title">Studio Behind-the-Scenes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Inspection & Verification -->
+            <div class="mockup-inspect">
+              <div class="mockup-section-label">Pre-Flight Checklist</div>
+              <div class="checklist-group">
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>High-res image verified</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Destination link validated</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Title & description formatted</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-pending" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  </svg>
+                  <span>Pinterest API dispatch (queued)</span>
+                </div>
+              </div>
+
+              <div class="mockup-callout">
+                <strong>Local Privacy Boundary</strong>
+                All shop catalog metadata, image files, and scheduled drafts are stored exclusively on your local device in SQLite.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="section-product" aria-labelledby="product-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Product Vision</div>
+          <h2 id="product-heading" class="section-title">Designed for clarity at every stage</h2>
+          <p class="section-subtitle">
+            Publishing social content often devolves into an unmanageable tangle of browser tabs, misplaced images, and scattered notes. Sociaza is being designed around three core disciplines.
+          </p>
+        </div>
+
+        <div class="pillar-grid">
+          <!-- Pillar 1: Plan -->
+          <article class="pillar-card">
+            <div class="pillar-badge">01 · Plan</div>
+            <h3 class="pillar-title">Organize content and publishing schedules</h3>
+            <p class="pillar-desc">
+              Build a clear, visual calendar of upcoming posts. Group assets into focused campaigns, plan cadences in advance, and coordinate multi-day drops without the chaos of last-minute posting.
+            </p>
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="plan-micro-list">
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Summer Drop · Lookbook 01</span>
+                  <span class="plan-micro-status">Scheduled</span>
+                </div>
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Walnut Series Spotlight</span>
+                  <span class="plan-micro-status">Queued</span>
+                </div>
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Material Guide: Pure Linen</span>
+                  <span class="plan-micro-status" style="background-color: var(--bg-subtle); color: var(--text-secondary);">Draft</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Organize -->
+          <article class="pillar-card">
+            <div class="pillar-badge">02 · Organize</div>
+            <h3 class="pillar-title">Manage images and publishing assets</h3>
+            <p class="pillar-desc">
+              Keep high-resolution photography, listing details, and product tags cataloged in one structured local workspace. Inspect image specifications, reuse proven copy, and eliminate missing assets.
+            </p>
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="organize-micro-grid">
+                <div class="organize-micro-thumb">
+                  <span>Photo 01</span>
+                </div>
+                <div class="organize-micro-thumb">
+                  <span>Photo 02</span>
+                </div>
+                <div class="organize-micro-thumb">
+                  <span>Photo 03</span>
+                </div>
+              </div>
+              <div style="margin-top: 0.65rem; display: flex; justify-content: space-between; font-size: 0.6875rem; color: var(--text-tertiary);">
+                <span>Local SQLite Index</span>
+                <span>Lossless Cache</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 3: Publish -->
+          <article class="pillar-card">
+            <div class="pillar-badge">03 · Publish</div>
+            <h3 class="pillar-title">Prepare and manage social content from one workflow</h3>
+            <p class="pillar-desc">
+              Tailor descriptions for destination channels, assign corresponding boards, verify links, and queue outgoing content—all from a single, unified publishing interface.
+            </p>
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="publish-micro-card">
+                <div class="publish-micro-row">
+                  <span>Destination: Pinterest</span>
+                  <span style="color: var(--status-dev); font-size: 0.75rem; font-weight: 600;">In Development</span>
+                </div>
+                <div class="publish-micro-sub">
+                  Board: Handcrafted Home &amp; Decor
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Status Callout -->
+    <section class="section-status" aria-labelledby="status-heading">
+      <div class="container">
+        <div class="status-box">
+          <div class="status-header-row">
+            <div class="status-title-group">
+              <div class="eyebrow" style="margin-bottom: 0.5rem;">Development Status</div>
+              <h3 id="status-heading">A deliberate, private foundation</h3>
+              <p>
+                Sociaza is currently an independent software project in active development. We are intentionally building it as a locally hosted web application running in a browser for single-user workflows before exploring broader platform expansions.
+              </p>
+            </div>
+            <span class="badge-status">
+              <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+              Active Development
+            </span>
+          </div>
+
+          <div class="status-grid">
+            <div class="status-cell">
+              <span class="status-cell-tag operational">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                Operational
+              </span>
+              <div class="status-cell-name">Local Catalog &amp; SQLite Storage</div>
+              <div class="status-cell-desc">Zero cloud dependency. Catalog data and assets live entirely on your local machine.</div>
+            </div>
+
+            <div class="status-cell">
+              <span class="status-cell-tag operational">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                Operational (Read-Only)
+              </span>
+              <div class="status-cell-name">Etsy Open API v3 Integration</div>
+              <div class="status-cell-desc">Read-only retrieval of shop listings and images. Never requests buyer or order data.</div>
+            </div>
+
+            <div class="status-cell">
+              <span class="status-cell-tag in-dev">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                In Active Development
+              </span>
+              <div class="status-cell-name">Pinterest API v5 Publishing</div>
+              <div class="status-cell-desc">Building local token encryption at rest and board publishing capabilities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-sticky-side">
+            <div class="eyebrow">About Sociaza</div>
+            <h2 id="about-heading">Software made for focus, not distraction</h2>
+          </div>
+
+          <div class="about-narrative">
+            <p>
+              Social publishing tools have become increasingly complex. What should be a straightforward workflow has been weighed down with enterprise feature sprawl, costly recurring subscriptions, invasive cloud tracking, and cluttered dashboards.
+            </p>
+            <p>
+              <strong>Sociaza is being created with a different philosophy:</strong> software should be quiet, reliable, and respect the creator's time and attention. By concentrating strictly on what matters—organizing your visual assets, planning your calendar, and crafting platform-ready posts—Sociaza provides a calm environment to manage your social presence.
+            </p>
+
+            <div class="principles-list">
+              <div class="principle-item">
+                <div class="principle-title">Local-first and private by default</div>
+                <div class="principle-desc">
+                  Your shop catalog, images, and OAuth credentials are stored on your local drive in SQLite. We do not maintain cloud servers that inspect, harvest, or aggregate your commercial data.
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-title">Restrained by design</div>
+                <div class="principle-desc">
+                  No artificial engagement metrics, gamified badges, or notification noise. Just a fast, responsive interface tailored for doing actual work.
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-title">Strict API compliance</div>
+                <div class="principle-desc">
+                  We integrate solely through official developer APIs with the minimal permissions necessary to perform publishing tasks.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#top" class="brand" aria-label="Sociaza home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
+                <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="18.5" r="1.5" fill="#234E38"/>
+              </svg>
+            </span>
+            <span class="brand-name">sociaza<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            A simpler, more organized workflow for social publishing.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <ul class="footer-nav-list" role="list">
+            <li><a href="#product" class="footer-nav-link">Product</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="privacy/" class="footer-nav-link">Privacy Policy</a></li>
+            <li><a href="mailto:contact@sociaza.online" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Sociaza. All rights reserved.</div>
+        <div class="footer-disclaimer">
+          Sociaza is an independent software project. All platform names and trademarks (including Etsy and Pinterest) belong to their respective owners and are referenced solely for compatibility purposes.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

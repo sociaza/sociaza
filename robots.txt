@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sociaza.online/sitemap.xml

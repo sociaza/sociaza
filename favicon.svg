@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Background canvas -->
+  <rect width="32" height="32" rx="8" fill="#F7F7F4"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#E5E4DE" stroke-width="1"/>
+  
+  <!-- Stylized 's' emblem with forest green accent -->
+  <path d="M19.5 10.5C18.4 9.5 16.8 9 15 9C11.7 9 9.8 10.8 9.8 13.3C9.8 17.2 17.5 16 17.5 19C17.5 20.3 16.3 21.2 14.5 21.2C12.5 21.2 10.8 20.2 9.5 18.8" stroke="#1F201E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Accent dot in signature forest green -->
+  <circle cx="21.5" cy="20.5" r="1.6" fill="#234E38"/>
+</svg>
