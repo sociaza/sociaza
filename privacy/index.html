@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Sociaza</title>
+  <meta name="description" content="Privacy Policy for Sociaza. Learn how our single-user, locally hosted web application running in a browser handles local SQLite storage and official API integrations.">
+  <meta name="author" content="Sociaza">
+  <link rel="canonical" href="https://sociaza.online/privacy/">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://sociaza.online/privacy/">
+  <meta property="og:title" content="Privacy Policy — Sociaza">
+  <meta property="og:description" content="Understand how Sociaza processes catalog data, stores tokens locally, and integrates with official developer APIs.">
+  <meta property="og:site_name" content="Sociaza">
+  <meta property="og:image" content="https://sociaza.online/assets/images/sociaza-mark.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <!-- Typography: Manrope with system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body id="top">
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand Logo & Wordmark -->
+      <a href="../" class="brand" aria-label="Sociaza home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
+            <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="18.5" r="1.5" fill="#234E38"/>
+          </svg>
+        </span>
+        <span class="brand-name">sociaza<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="../#product" class="nav-link">Product</a></li>
+          <li><a href="../#about" class="nav-link">About</a></li>
+          <li><a href="./" class="nav-link active">Privacy</a></li>
+        </ul>
+        <div class="nav-badge-wrap">
+          <span class="badge-status">
+            <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+            In Development
+          </span>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu" aria-controls="mobile-nav-drawer">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="../#product" class="mobile-nav-link">Product</a></li>
+      <li><a href="../#about" class="mobile-nav-link">About</a></li>
+      <li><a href="./" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="mailto:contact@sociaza.online" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="badge-status">
+        <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+        Currently in Private Development
+      </span>
+      <p style="font-size: 0.8125rem; color: var(--text-tertiary);">sociaza.online · All rights reserved</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Privacy Header -->
+    <section class="privacy-page-header">
+      <div class="container">
+        <div class="eyebrow">Legal Documentation</div>
+        <h1>Privacy Policy</h1>
+        <div class="privacy-meta">
+          <span>Effective Date: November 17, 2026</span>
+          <span>·</span>
+          <span>Version 1.0</span>
+          <span>·</span>
+          <span class="privacy-meta-badge">Locally Hosted Web Application (Browser-Based)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Document Layout -->
+    <div class="container privacy-body-wrapper">
+      <div class="privacy-layout">
+        <!-- Sidebar Navigation (Sticky on Desktop) -->
+        <aside class="privacy-sidebar-nav" aria-label="Privacy policy sections">
+          <div class="privacy-toc-title">Contents</div>
+          <ul class="privacy-toc-list" role="list">
+            <li><a href="#overview" class="privacy-toc-link">1. Overview &amp; Architecture</a></li>
+            <li><a href="#data-processed" class="privacy-toc-link">2. Information We Process</a></li>
+            <li><a href="#excluded-data" class="privacy-toc-link">3. Information We Do Not Collect</a></li>
+            <li><a href="#third-party-apis" class="privacy-toc-link">4. Third-Party API Integrations</a></li>
+            <li><a href="#storage-security" class="privacy-toc-link">5. Data Storage &amp; Security</a></li>
+            <li><a href="#user-control" class="privacy-toc-link">6. User Control &amp; Deletion</a></li>
+            <li><a href="#multi-user" class="privacy-toc-link">7. Multi-User &amp; Cloud Boundaries</a></li>
+            <li><a href="#updates" class="privacy-toc-link">8. Changes to This Policy</a></li>
+            <li><a href="#contact" class="privacy-toc-link">9. Operator Contact Information</a></li>
+          </ul>
+        </aside>
+
+        <!-- Document Content -->
+        <article class="privacy-content">
+          <!-- Section 1 -->
+          <section id="overview">
+            <h2>1. Overview &amp; Application Architecture</h2>
+            <p>
+              This Privacy Policy explains how <strong>Sociaza</strong> ("the Application", "we", "our", or "the software") handles data. Sociaza is an independent software application designed to help individual users organize, prepare, and manage publishing assets across social channels.
+            </p>
+            <p>
+              To maintain complete transparency with our users and platform API partners (including Pinterest and Etsy), this document details our technical architecture, current capabilities, and planned integrations:
+            </p>
+            <ul>
+              <li><strong>Locally Hosted Execution:</strong> The Application is a locally hosted web application that runs directly on the user's personal computer and is accessed through a local web browser.</li>
+              <li><strong>Single-User Scope:</strong> The Application is designed initially for one individual operator. It does not provide public multi-user accounts, shared hosted databases, or software-as-a-service (SaaS) multi-tenancy.</li>
+              <li><strong>Zero Cloud Databases:</strong> User catalog data, settings, and credentials are stored strictly in a local database on the user's hard drive. No user data is transmitted to or hosted on Sociaza cloud servers.</li>
+            </ul>
+
+            <div class="callout-box highlight">
+              <div class="callout-box-title">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1.5C4.41 1.5 1.5 4.41 1.5 8C1.5 11.59 4.41 14.5 8 14.5C11.59 14.5 14.5 11.59 14.5 8C14.5 4.41 11.59 1.5 8 1.5ZM8 10.5C7.59 10.5 7.25 10.16 7.25 9.75V7.75C7.25 7.34 7.59 7 8 7C8.41 7 8.75 7.34 8.75 7.75V9.75C8.75 10.16 8.41 10.5 8 10.5ZM8 5.75C7.59 5.75 7.25 5.41 7.25 5C7.25 4.59 7.59 4.25 8 4.25C8.41 4.25 8.75 4.59 8.75 5C8.75 5.41 8.41 5.75 8 5.75Z" fill="#234E38"/>
+                </svg>
+                Core Distinction: Current Operation vs. Planned Features
+              </div>
+              <p>
+                Currently, Sociaza operates as a local catalog and asset staging tool. While integrations with third-party publishing platforms (specifically Pinterest) are designed and under active development, live account publishing is not yet active, and real user account data from those platforms is not being ingested or processed at this time.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="data-processed">
+            <h2>2. Categories of Information Processed</h2>
+            <p>
+              When operated by the user, the Application is designed to process only the specific categories of data necessary for its local cataloging and publishing workflow:
+            </p>
+
+            <h3>A. Local Workspace Configuration</h3>
+            <p>
+              User preferences, local file paths to image directories, application layout options, and publication schedule parameters selected within the local web application.
+            </p>
+
+            <h3>B. Etsy Shop &amp; Catalog Information</h3>
+            <p>
+              When the user connects their Etsy shop using official authentication, the Application retrieves public and seller-facing catalog items via the official Etsy Open API v3:
+            </p>
+            <ul>
+              <li><strong>Shop Metadata:</strong> Shop name, shop ID, and basic shop configuration.</li>
+              <li><strong>Listing Data:</strong> Listing IDs, titles, descriptions, categories, pricing, item tags, and inventory status.</li>
+              <li><strong>Listing Imagery:</strong> Public image URLs, image dimensions, and image asset files for cached display.</li>
+            </ul>
+
+            <h3>C. API Authentication Credentials</h3>
+            <p>
+              OAuth 2.0 access tokens and refresh tokens received directly from official platform authorization flows. These tokens allow the Application to execute authorized API calls on the user's explicit behalf.
+            </p>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="excluded-data">
+            <h2>3. Information We Explicitly Do Not Collect</h2>
+            <p>
+              Sociaza is architected with strict data minimization principles. The Application expressly does <strong>not</strong> collect, process, or store:
+            </p>
+            <ul>
+              <li><strong>Customer &amp; Buyer Information:</strong> The Application never requests, accesses, or downloads Etsy customer orders, buyer names, buyer delivery addresses, emails, or buyer payment records. API scopes for buyer or transaction data are intentionally omitted.</li>
+              <li><strong>Financial &amp; Payment Data:</strong> No credit card numbers, bank account numbers, or billing payment credentials are ever processed by Sociaza.</li>
+              <li><strong>Tracking &amp; Behavioral Telemetry:</strong> The local web application and this website do not include behavioral advertising trackers, session replay scripts, or third-party marketing SDKs.</li>
+              <li><strong>Cross-User Data:</strong> Because the Application runs locally for a single user, no data from one user is ever mixed, aggregated, or co-mingled with any other user.</li>
+            </ul>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="third-party-apis">
+            <h2>4. Third-Party API Integrations</h2>
+            <p>
+              Sociaza interacts exclusively with official platform APIs. We honor all platform developer terms, guidelines, and access restrictions.
+            </p>
+
+            <h3>Etsy Open API v3 (Operational — Read-Only)</h3>
+            <p>
+              Integration with Etsy is conducted strictly via the official Etsy Open API v3.
+            </p>
+            <ul>
+              <li><strong>Authorized Scopes:</strong> Access is limited to read-only scopes necessary for catalog synchronization, specifically <code>shops_r</code> and <code>listings_r</code>.</li>
+              <li><strong>Purpose:</strong> To allow the shop owner to inspect their existing listings, organize associated image files, and prepare publishing drafts without manual re-entry.</li>
+              <li><strong>Storage:</strong> Synced catalog details are stored locally on the user's computer in a SQLite database file.</li>
+              <li><strong>Attribution:</strong> The term 'Etsy' is a trademark of Etsy, Inc. Sociaza is an independent application and is not endorsed by or affiliated with Etsy, Inc.</li>
+            </ul>
+
+            <h3>Pinterest API v5 (In Development — Planned Integration)</h3>
+            <p>
+              The Application's planned Pinterest integration is currently under active development and has not yet been connected to real user accounts.
+            </p>
+            <ul>
+              <li><strong>Intended Architecture:</strong> When completed, the Application is designed to use official Pinterest API v5 endpoints to read the user's available boards and create organic Pins from approved catalog drafts upon explicit user command.</li>
+              <li><strong>OAuth Security:</strong> Pinterest OAuth access tokens and refresh tokens are designed to be stored locally on the user's device and encrypted at rest using the Application's existing local encryption mechanism.</li>
+              <li><strong>Current Status:</strong> No real Pinterest account data is currently processed or stored. Live publishing will only commence following formal application review and approval under Pinterest's Developer terms.</li>
+              <li><strong>Attribution:</strong> The term 'Pinterest' and the Pinterest logo are trademarks of Pinterest, Inc. Sociaza is an independent tool and is not endorsed by or affiliated with Pinterest, Inc.</li>
+            </ul>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="storage-security">
+            <h2>5. Data Storage, Security &amp; Boundaries</h2>
+            <p>
+              Because Sociaza is an independent, locally hosted web application running in a browser, data storage and security boundaries are established as follows:
+            </p>
+            <ul>
+              <li><strong>Local SQLite Storage:</strong> Catalog data, cached asset metadata, draft pins, and publishing queues are saved in a local SQLite database file located in the application's local working directory.</li>
+              <li><strong>Local Encryption at Rest:</strong> Sensitive API tokens and OAuth refresh secrets are designed to be stored in an encrypted state at rest using local cryptographic libraries.</li>
+              <li><strong>No Central Cloud Server:</strong> There is no central Sociaza server, cloud synchronization cluster, or remote relational database holding user data. When the user interacts with an API, communication occurs directly between the local application instance and the respective platform endpoint (such as directly to <code>api.etsy.com</code> or <code>api.pinterest.com</code>).</li>
+              <li><strong>Security Audit Status:</strong> The Application is developed with secure coding standards and modern cryptographic practices. However, to maintain honest disclosure, the Application has not undergone independent third-party commercial security audits. Users maintain physical and administrative security over their own computing environments.</li>
+            </ul>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="user-control">
+            <h2>6. User Control, Data Portability &amp; Deletion</h2>
+            <p>
+              Because all application data is stored locally, users retain total control over their information at all times:
+            </p>
+            <ul>
+              <li><strong>Local Data Removal:</strong> Users can permanently delete all stored catalog information, image caches, and settings by deleting the local SQLite database file or removing the local application directory.</li>
+              <li><strong>Revocation of API Access:</strong>
+                <ul>
+                  <li><strong>Etsy:</strong> Users may revoke Sociaza's API access at any moment through their Etsy account under <em>Account Settings &gt; Apps</em>.</li>
+                  <li><strong>Pinterest:</strong> Users may disconnect or revoke permissions at any time via their Pinterest profile under <em>Settings &gt; Apps</em>.</li>
+                </ul>
+              </li>
+              <li><strong>Data Retention:</strong> Data remains on the user's local machine until the user deletes it, purges the local database, or clears the application cache. We do not retain backup copies because we do not operate remote storage infrastructure.</li>
+            </ul>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="multi-user">
+            <h2>7. Multi-User &amp; Public Service Limitations</h2>
+            <p>
+              To eliminate any ambiguity regarding our current service offering:
+            </p>
+            <ul>
+              <li>Sociaza does <strong>not</strong> currently offer public user registration, hosted user accounts, or web-based multi-user subscriptions.</li>
+              <li>Sociaza does <strong>not</strong> operate a public cloud software platform where multiple organizations or third parties share application instances.</li>
+              <li>Any future transitions toward multi-user or cloud-synchronized features will be accompanied by an updated Privacy Policy and explicit opt-in consent from users.</li>
+            </ul>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="updates">
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>
+              As Sociaza evolves—particularly as Pinterest API v5 integration moves from private development into production status—we may update this Privacy Policy to reflect technical adjustments, new scopes, or regulatory standards.
+            </p>
+            <p>
+              Any revisions will be published immediately at <a href="https://sociaza.online/privacy/">https://sociaza.online/privacy/</a> with an updated effective date at the top of this document.
+            </p>
+          </section>
+
+          <!-- Section 9 -->
+          <section id="contact">
+            <h2>9. Operator Information &amp; Contact Inquiries</h2>
+            <p>
+              For technical inquiries, API compliance questions, or privacy disclosures regarding Sociaza, please direct correspondence to the project operator:
+            </p>
+
+            <div class="callout-box">
+              <div class="callout-box-title">Operator Contact Details</div>
+              <p style="margin-bottom: 0.5rem;">
+                <strong>Project / Operator:</strong> Sociaza Development Team
+              </p>
+              <p style="margin-bottom: 0.5rem;">
+                <strong>Contact Email:</strong> <a href="mailto:contact@sociaza.online">contact@sociaza.online</a>
+              </p>
+              <p style="margin-bottom: 0.5rem;">
+                <strong>Official Website:</strong> <a href="https://sociaza.online">https://sociaza.online</a>
+              </p>
+              <p style="margin-bottom: 0;">
+                <strong>Project Status:</strong> Independent software project in active development.
+              </p>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="../" class="brand" aria-label="Sociaza home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
+                <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="18.5" r="1.5" fill="#234E38"/>
+              </svg>
+            </span>
+            <span class="brand-name">sociaza<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            A simpler, more organized workflow for social publishing.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <ul class="footer-nav-list" role="list">
+            <li><a href="../#product" class="footer-nav-link">Product</a></li>
+            <li><a href="../#about" class="footer-nav-link">About</a></li>
+            <li><a href="./" class="footer-nav-link">Privacy Policy</a></li>
+            <li><a href="mailto:contact@sociaza.online" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Sociaza. All rights reserved.</div>
+        <div class="footer-disclaimer">
+          Sociaza is an independent software project. All platform names and trademarks (including Etsy and Pinterest) belong to their respective owners and are referenced solely for compatibility purposes.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Script -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
