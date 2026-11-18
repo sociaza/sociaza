@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Sociaza</title>
-  <meta name="description" content="Privacy Policy for Sociaza. Learn how our single-user, locally hosted web application running in a browser handles local SQLite storage and official API integrations.">
+  <title>Sociaza — Calm, Organized Social Publishing</title>
+  <meta name="description" content="A more organized way to prepare, manage, and publish content across your social channels. An elegant, privacy-first locally hosted web publishing workflow currently in development.">
   <meta name="author" content="Sociaza">
-  <link rel="canonical" href="https://sociaza.online/privacy/">
+  <link rel="canonical" href="https://sociaza.online/">
 
   <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://sociaza.online/privacy/">
-  <meta property="og:title" content="Privacy Policy — Sociaza">
-  <meta property="og:description" content="Understand how Sociaza processes catalog data, stores tokens locally, and integrates with official developer APIs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sociaza.online/">
+  <meta property="og:title" content="Sociaza — Calm, Organized Social Publishing">
+  <meta property="og:description" content="A more organized way to prepare, manage, and publish content across your social channels.">
   <meta property="og:site_name" content="Sociaza">
   <meta property="og:image" content="https://sociaza.online/assets/images/sociaza-mark.svg">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sociaza — Calm, Organized Social Publishing">
+  <meta name="twitter:description" content="A more organized way to prepare, manage, and publish content across your social channels.">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Typography: Manrope with system fallbacks -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body id="top">
   <!-- Accessibility Skip Link -->
@@ -35,7 +40,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <!-- Brand Logo & Wordmark -->
-      <a href="../" class="brand" aria-label="Sociaza home">
+      <a href="#top" class="brand" aria-label="Sociaza home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
             <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -48,12 +53,12 @@
       <!-- Desktop Navigation -->
       <nav class="nav-desktop" aria-label="Primary navigation">
         <ul class="nav-links" role="list">
-          <li><a href="../#product" class="nav-link">Product</a></li>
-          <li><a href="../#about" class="nav-link">About</a></li>
-          <li><a href="./" class="nav-link active">Privacy</a></li>
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="/privacy/" class="nav-link">Privacy</a></li>
         </ul>
         <div class="nav-badge-wrap">
-          <span class="badge-status">
+          <span class="badge-status" title="Sociaza is currently in private development">
             <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
             In Development
           </span>
@@ -74,9 +79,9 @@
   <!-- Mobile Navigation Drawer -->
   <div id="mobile-nav-drawer" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile menu">
     <ul class="mobile-nav-links" role="list">
-      <li><a href="../#product" class="mobile-nav-link">Product</a></li>
-      <li><a href="../#about" class="mobile-nav-link">About</a></li>
-      <li><a href="./" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="#product" class="mobile-nav-link">Product</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="/privacy/" class="mobile-nav-link">Privacy Policy</a></li>
       <li><a href="mailto:contact@sociaza.online" class="mobile-nav-link">Contact</a></li>
     </ul>
     <div class="mobile-nav-footer">
@@ -90,224 +95,381 @@
 
   <!-- Main Content -->
   <main id="main-content">
-    <!-- Privacy Header -->
-    <section class="privacy-page-header">
+    <!-- Hero Section -->
+    <section class="section-hero" aria-labelledby="hero-title">
       <div class="container">
-        <div class="eyebrow">Legal Documentation</div>
-        <h1>Privacy Policy</h1>
-        <div class="privacy-meta">
-          <span>Effective Date: November 17, 2026</span>
-          <span>·</span>
-          <span>Version 1.0</span>
-          <span>·</span>
-          <span class="privacy-meta-badge">Locally Hosted Web Application (Browser-Based)</span>
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-badge">Early Preview</span>
+            <span>·</span>
+            <span>Single-user locally hosted architecture</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Your content. Your platforms. One simpler workflow.
+          </h1>
+
+          <p class="hero-subtitle">
+            A more organized way to prepare, manage, and publish content across your social channels.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#product" class="btn btn-primary">
+              Discover Sociaza
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3.5V12.5M8 12.5L3.5 8M8 12.5L12.5 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">Read the Vision</a>
+          </div>
+        </div>
+
+        <!-- Product Interface Preview (Authentic CSS/SVG UI Window) -->
+        <div class="product-mockup-wrapper" aria-label="Illustrative preview of the Sociaza browser-based local application interface">
+          <div class="mockup-window-header">
+            <div class="window-dots" aria-hidden="true">
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+            </div>
+            <div class="window-title">
+              <span>localhost:3000</span>
+              <span style="color: var(--border-medium);">/</span>
+              <span>Sociaza</span>
+              <span class="window-status-pill">Illustrative Concept</span>
+            </div>
+            <div class="window-actions">
+              <span style="font-size: 0.75rem; color: var(--text-tertiary); font-family: var(--font-mono);">Local App</span>
+            </div>
+          </div>
+
+          <div class="mockup-body">
+            <!-- Left: Workspace Navigation -->
+            <div class="mockup-sidebar">
+              <div class="mockup-section-label">Local Workspace</div>
+              <div class="mockup-nav-item is-selected">
+                <span>Active Queue</span>
+                <span class="mockup-count-pill">6</span>
+              </div>
+              <div class="mockup-nav-item">
+                <span>Asset Library</span>
+                <span class="mockup-count-pill">48</span>
+              </div>
+              <div class="mockup-nav-item">
+                <span>Publishing Calendar</span>
+              </div>
+
+              <div class="mockup-section-label" style="margin-top: 1.5rem;">Synced Catalogs</div>
+              <div class="mockup-channel-card">
+                <div class="channel-card-head">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#234E38" stroke-width="1.5"/>
+                    <path d="M5.5 8H10.5" stroke="#234E38" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Etsy Shop Catalog</span>
+                </div>
+                <div class="channel-card-sub">Read-only API v3 · 24 Items</div>
+              </div>
+
+              <div class="mockup-channel-card" style="margin-top: 0.65rem;">
+                <div class="channel-card-head" style="color: var(--text-secondary);">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#8A8C87" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  </svg>
+                  <span>Pinterest Target</span>
+                </div>
+                <div class="channel-card-sub">API v5 Integration in Dev</div>
+              </div>
+            </div>
+
+            <!-- Center: Publishing Composer -->
+            <div class="mockup-main">
+              <div class="composer-card">
+                <div class="composer-header">
+                  <div class="composer-source">
+                    <span class="source-tag">Etsy Item #84920</span>
+                    <span style="color: var(--text-tertiary);">→</span>
+                    <span style="font-weight: 600; font-size: 0.8125rem;">Pinterest Draft</span>
+                  </div>
+                  <span class="tag-chip" style="background-color: var(--accent-light); color: var(--accent);">Board: Handcrafted Home</span>
+                </div>
+
+                <div class="composer-preview-grid">
+                  <div class="composer-asset-box">
+                    <svg class="asset-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <circle cx="8.5" cy="8.5" r="1.5"/>
+                      <path d="M21 15L16 10L5 21"/>
+                    </svg>
+                    <span class="asset-badge-local">SQLite Cache · 2000px</span>
+                  </div>
+
+                  <div class="composer-fields">
+                    <div class="composer-title-field">
+                      Minimalist Walnut Floating Shelf with Brass Inlay
+                    </div>
+                    <div class="composer-desc-field">
+                      Handcrafted solid walnut shelf designed for clean modern interiors. Precision joinery with brushed brass accent strip.
+                    </div>
+                    <div class="composer-tags-row">
+                      <span class="tag-chip">#woodworking</span>
+                      <span class="tag-chip">#minimalistdecor</span>
+                      <span class="tag-chip">#modernshelf</span>
+                      <span class="tag-chip">+4 more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Preview -->
+              <div class="timeline-strip">
+                <div class="timeline-label">
+                  <span>Publishing Cadence Preview</span>
+                  <span style="color: var(--text-tertiary); font-weight: 400;">Local Queue</span>
+                </div>
+                <div class="timeline-slots">
+                  <div class="timeline-slot is-active">
+                    <div class="slot-time">Today · 14:00</div>
+                    <div class="slot-title">Walnut Shelf Pin</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Tomorrow · 10:30</div>
+                    <div class="slot-title">Ceramic Mug Series</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Thu · 16:15</div>
+                    <div class="slot-title">Linen Throw Drop</div>
+                  </div>
+                  <div class="timeline-slot">
+                    <div class="slot-time">Fri · 11:00</div>
+                    <div class="slot-title">Studio Behind-the-Scenes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Inspection & Verification -->
+            <div class="mockup-inspect">
+              <div class="mockup-section-label">Pre-Flight Checklist</div>
+              <div class="checklist-group">
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>High-res image verified</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Destination link validated</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-ok" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 8L7 10L11 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Title & description formatted</span>
+                </div>
+                <div class="checklist-item">
+                  <svg class="checklist-icon-pending" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  </svg>
+                  <span>Pinterest API dispatch (queued)</span>
+                </div>
+              </div>
+
+              <div class="mockup-callout">
+                <strong>Local Privacy Boundary</strong>
+                All shop catalog metadata, image files, and scheduled drafts are stored exclusively on your local device in SQLite.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Privacy Document Layout -->
-    <div class="container privacy-body-wrapper">
-      <div class="privacy-layout">
-        <!-- Sidebar Navigation (Sticky on Desktop) -->
-        <aside class="privacy-sidebar-nav" aria-label="Privacy policy sections">
-          <div class="privacy-toc-title">Contents</div>
-          <ul class="privacy-toc-list" role="list">
-            <li><a href="#overview" class="privacy-toc-link">1. Overview &amp; Architecture</a></li>
-            <li><a href="#data-processed" class="privacy-toc-link">2. Information We Process</a></li>
-            <li><a href="#excluded-data" class="privacy-toc-link">3. Information We Do Not Collect</a></li>
-            <li><a href="#third-party-apis" class="privacy-toc-link">4. Third-Party API Integrations</a></li>
-            <li><a href="#storage-security" class="privacy-toc-link">5. Data Storage &amp; Security</a></li>
-            <li><a href="#user-control" class="privacy-toc-link">6. User Control &amp; Deletion</a></li>
-            <li><a href="#multi-user" class="privacy-toc-link">7. Multi-User &amp; Cloud Boundaries</a></li>
-            <li><a href="#updates" class="privacy-toc-link">8. Changes to This Policy</a></li>
-            <li><a href="#contact" class="privacy-toc-link">9. Operator Contact Information</a></li>
-          </ul>
-        </aside>
+    <!-- Product Section -->
+    <section id="product" class="section-product" aria-labelledby="product-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Product Vision</div>
+          <h2 id="product-heading" class="section-title">Designed for clarity at every stage</h2>
+          <p class="section-subtitle">
+            Publishing social content often devolves into an unmanageable tangle of browser tabs, misplaced images, and scattered notes. Sociaza is being designed around three core disciplines.
+          </p>
+        </div>
 
-        <!-- Document Content -->
-        <article class="privacy-content">
-          <!-- Section 1 -->
-          <section id="overview">
-            <h2>1. Overview &amp; Application Architecture</h2>
-            <p>
-              This Privacy Policy explains how <strong>Sociaza</strong> ("the Application", "we", "our", or "the software") handles data. Sociaza is an independent software application designed to help individual users organize, prepare, and manage publishing assets across social channels.
+        <div class="pillar-grid">
+          <!-- Pillar 1: Plan -->
+          <article class="pillar-card">
+            <div class="pillar-badge">01 · Plan</div>
+            <h3 class="pillar-title">Organize content and publishing schedules</h3>
+            <p class="pillar-desc">
+              Build a clear, visual calendar of upcoming posts. Group assets into focused campaigns, plan cadences in advance, and coordinate multi-day drops without the chaos of last-minute posting.
             </p>
-            <p>
-              To maintain complete transparency with our users and platform API partners (including Pinterest and Etsy), this document details our technical architecture, current capabilities, and planned integrations:
-            </p>
-            <ul>
-              <li><strong>Locally Hosted Execution:</strong> The Application is a locally hosted web application that runs directly on the user's personal computer and is accessed through a local web browser.</li>
-              <li><strong>Single-User Scope:</strong> The Application is designed initially for one individual operator. It does not provide public multi-user accounts, shared hosted databases, or software-as-a-service (SaaS) multi-tenancy.</li>
-              <li><strong>Zero Cloud Databases:</strong> User catalog data, settings, and credentials are stored strictly in a local database on the user's hard drive. No user data is transmitted to or hosted on Sociaza cloud servers.</li>
-            </ul>
-
-            <div class="callout-box highlight">
-              <div class="callout-box-title">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M8 1.5C4.41 1.5 1.5 4.41 1.5 8C1.5 11.59 4.41 14.5 8 14.5C11.59 14.5 14.5 11.59 14.5 8C14.5 4.41 11.59 1.5 8 1.5ZM8 10.5C7.59 10.5 7.25 10.16 7.25 9.75V7.75C7.25 7.34 7.59 7 8 7C8.41 7 8.75 7.34 8.75 7.75V9.75C8.75 10.16 8.41 10.5 8 10.5ZM8 5.75C7.59 5.75 7.25 5.41 7.25 5C7.25 4.59 7.59 4.25 8 4.25C8.41 4.25 8.75 4.59 8.75 5C8.75 5.41 8.41 5.75 8 5.75Z" fill="#234E38"/>
-                </svg>
-                Core Distinction: Current Operation vs. Planned Features
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="plan-micro-list">
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Summer Drop · Lookbook 01</span>
+                  <span class="plan-micro-status">Scheduled</span>
+                </div>
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Walnut Series Spotlight</span>
+                  <span class="plan-micro-status">Queued</span>
+                </div>
+                <div class="plan-micro-item">
+                  <span class="plan-micro-title">Material Guide: Pure Linen</span>
+                  <span class="plan-micro-status" style="background-color: var(--bg-subtle); color: var(--text-secondary);">Draft</span>
+                </div>
               </div>
-              <p>
-                Currently, Sociaza operates as a local catalog and asset staging tool. While integrations with third-party publishing platforms (specifically Pinterest) are designed and under active development, live account publishing is not yet active, and real user account data from those platforms is not being ingested or processed at this time.
-              </p>
             </div>
-          </section>
+          </article>
 
-          <!-- Section 2 -->
-          <section id="data-processed">
-            <h2>2. Categories of Information Processed</h2>
-            <p>
-              When operated by the user, the Application is designed to process only the specific categories of data necessary for its local cataloging and publishing workflow:
+          <!-- Pillar 2: Organize -->
+          <article class="pillar-card">
+            <div class="pillar-badge">02 · Organize</div>
+            <h3 class="pillar-title">Manage images and publishing assets</h3>
+            <p class="pillar-desc">
+              Keep high-resolution photography, listing details, and product tags cataloged in one structured local workspace. Inspect image specifications, reuse proven copy, and eliminate missing assets.
             </p>
-
-            <h3>A. Local Workspace Configuration</h3>
-            <p>
-              User preferences, local file paths to image directories, application layout options, and publication schedule parameters selected within the local web application.
-            </p>
-
-            <h3>B. Etsy Shop &amp; Catalog Information</h3>
-            <p>
-              When the user connects their Etsy shop using official authentication, the Application retrieves public and seller-facing catalog items via the official Etsy Open API v3:
-            </p>
-            <ul>
-              <li><strong>Shop Metadata:</strong> Shop name, shop ID, and basic shop configuration.</li>
-              <li><strong>Listing Data:</strong> Listing IDs, titles, descriptions, categories, pricing, item tags, and inventory status.</li>
-              <li><strong>Listing Imagery:</strong> Public image URLs, image dimensions, and image asset files for cached display.</li>
-            </ul>
-
-            <h3>C. API Authentication Credentials</h3>
-            <p>
-              OAuth 2.0 access tokens and refresh tokens received directly from official platform authorization flows. These tokens allow the Application to execute authorized API calls on the user's explicit behalf.
-            </p>
-          </section>
-
-          <!-- Section 3 -->
-          <section id="excluded-data">
-            <h2>3. Information We Explicitly Do Not Collect</h2>
-            <p>
-              Sociaza is architected with strict data minimization principles. The Application expressly does <strong>not</strong> collect, process, or store:
-            </p>
-            <ul>
-              <li><strong>Customer &amp; Buyer Information:</strong> The Application never requests, accesses, or downloads Etsy customer orders, buyer names, buyer delivery addresses, emails, or buyer payment records. API scopes for buyer or transaction data are intentionally omitted.</li>
-              <li><strong>Financial &amp; Payment Data:</strong> No credit card numbers, bank account numbers, or billing payment credentials are ever processed by Sociaza.</li>
-              <li><strong>Tracking &amp; Behavioral Telemetry:</strong> The local web application and this website do not include behavioral advertising trackers, session replay scripts, or third-party marketing SDKs.</li>
-              <li><strong>Cross-User Data:</strong> Because the Application runs locally for a single user, no data from one user is ever mixed, aggregated, or co-mingled with any other user.</li>
-            </ul>
-          </section>
-
-          <!-- Section 4 -->
-          <section id="third-party-apis">
-            <h2>4. Third-Party API Integrations</h2>
-            <p>
-              Sociaza interacts exclusively with official platform APIs. We honor all platform developer terms, guidelines, and access restrictions.
-            </p>
-
-            <h3>Etsy Open API v3 (Operational — Read-Only)</h3>
-            <p>
-              Integration with Etsy is conducted strictly via the official Etsy Open API v3.
-            </p>
-            <ul>
-              <li><strong>Authorized Scopes:</strong> Access is limited to read-only scopes necessary for catalog synchronization, specifically <code>shops_r</code> and <code>listings_r</code>.</li>
-              <li><strong>Purpose:</strong> To allow the shop owner to inspect their existing listings, organize associated image files, and prepare publishing drafts without manual re-entry.</li>
-              <li><strong>Storage:</strong> Synced catalog details are stored locally on the user's computer in a SQLite database file.</li>
-              <li><strong>Attribution:</strong> The term 'Etsy' is a trademark of Etsy, Inc. Sociaza is an independent application and is not endorsed by or affiliated with Etsy, Inc.</li>
-            </ul>
-
-            <h3>Pinterest API v5 (In Development — Planned Integration)</h3>
-            <p>
-              The Application's planned Pinterest integration is currently under active development and has not yet been connected to real user accounts.
-            </p>
-            <ul>
-              <li><strong>Intended Architecture:</strong> When completed, the Application is designed to use official Pinterest API v5 endpoints to read the user's available boards and create organic Pins from approved catalog drafts upon explicit user command.</li>
-              <li><strong>OAuth Security:</strong> Pinterest OAuth access tokens and refresh tokens are designed to be stored locally on the user's device and encrypted at rest using the Application's existing local encryption mechanism.</li>
-              <li><strong>Current Status:</strong> No real Pinterest account data is currently processed or stored. Live publishing will only commence following formal application review and approval under Pinterest's Developer terms.</li>
-              <li><strong>Attribution:</strong> The term 'Pinterest' and the Pinterest logo are trademarks of Pinterest, Inc. Sociaza is an independent tool and is not endorsed by or affiliated with Pinterest, Inc.</li>
-            </ul>
-          </section>
-
-          <!-- Section 5 -->
-          <section id="storage-security">
-            <h2>5. Data Storage, Security &amp; Boundaries</h2>
-            <p>
-              Because Sociaza is an independent, locally hosted web application running in a browser, data storage and security boundaries are established as follows:
-            </p>
-            <ul>
-              <li><strong>Local SQLite Storage:</strong> Catalog data, cached asset metadata, draft pins, and publishing queues are saved in a local SQLite database file located in the application's local working directory.</li>
-              <li><strong>Local Encryption at Rest:</strong> Sensitive API tokens and OAuth refresh secrets are designed to be stored in an encrypted state at rest using local cryptographic libraries.</li>
-              <li><strong>No Central Cloud Server:</strong> There is no central Sociaza server, cloud synchronization cluster, or remote relational database holding user data. When the user interacts with an API, communication occurs directly between the local application instance and the respective platform endpoint (such as directly to <code>api.etsy.com</code> or <code>api.pinterest.com</code>).</li>
-              <li><strong>Security Audit Status:</strong> The Application is developed with secure coding standards and modern cryptographic practices. However, to maintain honest disclosure, the Application has not undergone independent third-party commercial security audits. Users maintain physical and administrative security over their own computing environments.</li>
-            </ul>
-          </section>
-
-          <!-- Section 6 -->
-          <section id="user-control">
-            <h2>6. User Control, Data Portability &amp; Deletion</h2>
-            <p>
-              Because all application data is stored locally, users retain total control over their information at all times:
-            </p>
-            <ul>
-              <li><strong>Local Data Removal:</strong> Users can permanently delete all stored catalog information, image caches, and settings by deleting the local SQLite database file or removing the local application directory.</li>
-              <li><strong>Revocation of API Access:</strong>
-                <ul>
-                  <li><strong>Etsy:</strong> Users may revoke Sociaza's API access at any moment through their Etsy account under <em>Account Settings &gt; Apps</em>.</li>
-                  <li><strong>Pinterest:</strong> Users may disconnect or revoke permissions at any time via their Pinterest profile under <em>Settings &gt; Apps</em>.</li>
-                </ul>
-              </li>
-              <li><strong>Data Retention:</strong> Data remains on the user's local machine until the user deletes it, purges the local database, or clears the application cache. We do not retain backup copies because we do not operate remote storage infrastructure.</li>
-            </ul>
-          </section>
-
-          <!-- Section 7 -->
-          <section id="multi-user">
-            <h2>7. Multi-User &amp; Public Service Limitations</h2>
-            <p>
-              To eliminate any ambiguity regarding our current service offering:
-            </p>
-            <ul>
-              <li>Sociaza does <strong>not</strong> currently offer public user registration, hosted user accounts, or web-based multi-user subscriptions.</li>
-              <li>Sociaza does <strong>not</strong> operate a public cloud software platform where multiple organizations or third parties share application instances.</li>
-              <li>Any future transitions toward multi-user or cloud-synchronized features will be accompanied by an updated Privacy Policy and explicit opt-in consent from users.</li>
-            </ul>
-          </section>
-
-          <!-- Section 8 -->
-          <section id="updates">
-            <h2>8. Changes to This Privacy Policy</h2>
-            <p>
-              As Sociaza evolves—particularly as Pinterest API v5 integration moves from private development into production status—we may update this Privacy Policy to reflect technical adjustments, new scopes, or regulatory standards.
-            </p>
-            <p>
-              Any revisions will be published immediately at <a href="https://sociaza.online/privacy/">https://sociaza.online/privacy/</a> with an updated effective date at the top of this document.
-            </p>
-          </section>
-
-          <!-- Section 9 -->
-          <section id="contact">
-            <h2>9. Operator Information &amp; Contact Inquiries</h2>
-            <p>
-              For technical inquiries, API compliance questions, or privacy disclosures regarding Sociaza, please direct correspondence to the project operator:
-            </p>
-
-            <div class="callout-box">
-              <div class="callout-box-title">Operator Contact Details</div>
-              <p style="margin-bottom: 0.5rem;">
-                <strong>Project / Operator:</strong> Sociaza Development Team
-              </p>
-              <p style="margin-bottom: 0.5rem;">
-                <strong>Contact Email:</strong> <a href="mailto:contact@sociaza.online">contact@sociaza.online</a>
-              </p>
-              <p style="margin-bottom: 0.5rem;">
-                <strong>Official Website:</strong> <a href="https://sociaza.online">https://sociaza.online</a>
-              </p>
-              <p style="margin-bottom: 0;">
-                <strong>Project Status:</strong> Independent software project in active development.
-              </p>
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="organize-micro-grid">
+                <div class="organize-micro-thumb">
+                  <span>Photo 01</span>
+                </div>
+                <div class="organize-micro-thumb">
+                  <span>Photo 02</span>
+                </div>
+                <div class="organize-micro-thumb">
+                  <span>Photo 03</span>
+                </div>
+              </div>
+              <div style="margin-top: 0.65rem; display: flex; justify-content: space-between; font-size: 0.6875rem; color: var(--text-tertiary);">
+                <span>Local SQLite Index</span>
+                <span>Lossless Cache</span>
+              </div>
             </div>
-          </section>
-        </article>
+          </article>
+
+          <!-- Pillar 3: Publish -->
+          <article class="pillar-card">
+            <div class="pillar-badge">03 · Publish</div>
+            <h3 class="pillar-title">Prepare and manage social content from one workflow</h3>
+            <p class="pillar-desc">
+              Tailor descriptions for destination channels, assign corresponding boards, verify links, and queue outgoing content—all from a single, unified publishing interface.
+            </p>
+            <div class="pillar-visual" aria-hidden="true">
+              <div class="publish-micro-card">
+                <div class="publish-micro-row">
+                  <span>Destination: Pinterest</span>
+                  <span style="color: var(--status-dev); font-size: 0.75rem; font-weight: 600;">In Development</span>
+                </div>
+                <div class="publish-micro-sub">
+                  Board: Handcrafted Home &amp; Decor
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Development Status Callout -->
+    <section class="section-status" aria-labelledby="status-heading">
+      <div class="container">
+        <div class="status-box">
+          <div class="status-header-row">
+            <div class="status-title-group">
+              <div class="eyebrow" style="margin-bottom: 0.5rem;">Development Status</div>
+              <h3 id="status-heading">A deliberate, private foundation</h3>
+              <p>
+                Sociaza is currently an independent software project in active development. We are intentionally building it as a locally hosted web application running in a browser for single-user workflows before exploring broader platform expansions.
+              </p>
+            </div>
+            <span class="badge-status">
+              <span class="status-dot status-dot-pulse" aria-hidden="true"></span>
+              Active Development
+            </span>
+          </div>
+
+          <div class="status-grid">
+            <div class="status-cell">
+              <span class="status-cell-tag operational">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                Operational
+              </span>
+              <div class="status-cell-name">Local Catalog &amp; SQLite Storage</div>
+              <div class="status-cell-desc">Zero cloud dependency. Catalog data and assets live entirely on your local machine.</div>
+            </div>
+
+            <div class="status-cell">
+              <span class="status-cell-tag operational">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                Operational (Read-Only)
+              </span>
+              <div class="status-cell-name">Etsy Open API v3 Integration</div>
+              <div class="status-cell-desc">Read-only retrieval of shop listings and images. Never requests buyer or order data.</div>
+            </div>
+
+            <div class="status-cell">
+              <span class="status-cell-tag in-dev">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3.5"/></svg>
+                In Active Development
+              </span>
+              <div class="status-cell-name">Pinterest API v5 Publishing</div>
+              <div class="status-cell-desc">Building local token encryption at rest and board publishing capabilities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-sticky-side">
+            <div class="eyebrow">About Sociaza</div>
+            <h2 id="about-heading">Software made for focus, not distraction</h2>
+          </div>
+
+          <div class="about-narrative">
+            <p>
+              Social publishing tools have become increasingly complex. What should be a straightforward workflow has been weighed down with enterprise feature sprawl, costly recurring subscriptions, invasive cloud tracking, and cluttered dashboards.
+            </p>
+            <p>
+              <strong>Sociaza is being created with a different philosophy:</strong> software should be quiet, reliable, and respect the creator's time and attention. By concentrating strictly on what matters—organizing your visual assets, planning your calendar, and crafting platform-ready posts—Sociaza provides a calm environment to manage your social presence.
+            </p>
+
+            <div class="principles-list">
+              <div class="principle-item">
+                <div class="principle-title">Local-first and private by default</div>
+                <div class="principle-desc">
+                  Your shop catalog, images, and OAuth credentials are stored on your local drive in SQLite. We do not maintain cloud servers that inspect, harvest, or aggregate your commercial data.
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-title">Restrained by design</div>
+                <div class="principle-desc">
+                  No artificial engagement metrics, gamified badges, or notification noise. Just a fast, responsive interface tailored for doing actual work.
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-title">Strict API compliance</div>
+                <div class="principle-desc">
+                  We integrate solely through official developer APIs with the minimal permissions necessary to perform publishing tasks.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Site Footer -->
@@ -315,7 +477,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand-col">
-          <a href="../" class="brand" aria-label="Sociaza home">
+          <a href="#top" class="brand" aria-label="Sociaza home">
             <span class="brand-mark" aria-hidden="true">
               <svg viewBox="0 0 32 32" width="18" height="18" fill="none">
                 <path d="M19 9.5C18 8.6 16.6 8.2 15 8.2C12 8.2 10.2 9.8 10.2 12C10.2 15.4 17 14.3 17 17C17 18.2 15.9 19 14.3 19C12.5 19 11 18.1 9.8 16.9" stroke="#1F201E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -331,9 +493,9 @@
 
         <div class="footer-links-col">
           <ul class="footer-nav-list" role="list">
-            <li><a href="../#product" class="footer-nav-link">Product</a></li>
-            <li><a href="../#about" class="footer-nav-link">About</a></li>
-            <li><a href="./" class="footer-nav-link">Privacy Policy</a></li>
+            <li><a href="#product" class="footer-nav-link">Product</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="/privacy/" class="footer-nav-link">Privacy Policy</a></li>
             <li><a href="mailto:contact@sociaza.online" class="footer-nav-link">Contact</a></li>
           </ul>
         </div>
@@ -349,6 +511,6 @@
   </footer>
 
   <!-- Core Script -->
-  <script src="../assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
